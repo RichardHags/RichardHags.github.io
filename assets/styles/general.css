@@ -1,0 +1,13 @@
+﻿.container-header {
+    background-image: url("../images/layout/header-sky.jpg");
+    background-size: cover;
+}
+#main-section {
+    border-top: 4px solid;
+}
+.figure-caption {
+    font-size: 14px;
+}
+#svar_nej:checked ~ * {
+    visibility: hidden;
+}

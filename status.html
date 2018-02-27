@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/styles/general.css">
+    <title>Nickstabadet</title>
+</head>
+<body>
+    <header class="container-header p-3">
+        <div class="text-primary text-center text-md-left ml-md-4 m-2">
+            <h1>Nickstabadet</h1>
+            <p>Ett soligt sommarbad</p>
+        </div>
+    </header>
+    <!-- NavigeringsFältet -->
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+		<button class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#nicksta-navbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="nicksta-navbar">
+			<ul class="navbar-nav ml-md-5">
+				<li class="nav-item"><a class="nav-link" href="index.html">Hem</a></li>
+				<li class="nav-item"><a class="nav-link" href="contact.html">Kontakt</a></li>
+				<li class="nav-item active"><a class="nav-link" href="status.html">Väder</a></li>
+				<li class="nav-item"><a class="nav-link" href="index.html">Tillbaks</a></li>
+			</ul>
+		</div>
+	</nav>
+    
+    <!-- Vänstra kolumnen (tåg) -->
+    <div class="container-fluid bg-light pt-3 p-md-5">
+        <div class="row col">
+            <div class="col-md-7 mb-5">
+                <section class="card border-primary bg-white ml-md-3 p-1 ">
+                    <header class="mt-3 ml-3">
+                        <h2>Åker tågen?</h2>
+                    </header>
+                    <div class="card-body">
+                        <form>
+                          <div class="form-group row">
+                            <label for="fran-dest">Jag åker ifrån..</label>
+                            <div class="col-md-10">
+                              <input type="text" class="text-input" id="fran-dest" placeholder="ex: Stockholm / Södertälje">
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <div class="col-md-10">
+                              <button id="sok-knapp" type="submit" class="btn btn-primary">Sök..</button>
+                            </div>
+                          </div>
+                        </form>
+
+                        <table class="table table-striped">
+                            <caption class="ml-2 text-dark">Inga problem i trafiken</caption>
+                            <thead class="bg-dark text-light">
+                                <tr>
+                                    <th scope="col">Nr</th>
+                                    <th scope="col">Avgår</th>
+                                    <th scope="col">Ankommer</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tag-table">
+                            </tbody>
+                                   
+                        </table>
+                        <small id="aker-fran" class="text-secondary">Åker från</small>
+                    </div>
+                </section>
+            </div>
+           
+            <!-- Högra (väder) -->
+            <div class="col-md-5">
+                <section class="card border-primary bg-white">
+                    <header>
+                        <h2 class="m-3">Vädret på Nicksta</h2>
+                    </header>
+                    <div class="card-body">
+                        <table class="table table-striped">
+                            <thead class="bg-dark text-light">
+                                <tr>
+                                    <th>Klocka</th>
+                                    <th>Väder</th>
+                                    <th>Värme</th>
+                                    <th>Vind</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>07:00</td>
+                                    <td>Moln</td>
+                                    <td>16&#8451;</td>
+                                    <td>3m/s</td>
+                                </tr>
+                                <tr>
+                                    <td>10:00</td>
+                                    <td>moln</td>
+                                    <td>19&#8451;</td>
+                                    <td>4m/s</td>
+                                </tr>
+                                <tr>
+                                    <td>13:00</td>
+                                    <td>Moln</td>
+                                    <td>18&#8451;</td>
+                                    <td>4m/s</td>
+                                </tr>
+                                <tr>
+                                    <td>16:00</td>
+                                    <td>Sol</td>
+                                    <td>17&#8451;</td>
+                                    <td>2m/s</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="p-1 bg-light border border-0 border-light">
+        <hr>
+        <footer class="text-center text-muted pb-4 mt-1">Vill du veta mer? Skicka e post till <a href="mailto:qwerty@asdf.com">Richard Hagström</a></footer>
+    </div>  
+    
+    <script src="assets/scripts/app.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+</html>

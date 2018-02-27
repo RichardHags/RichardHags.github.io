@@ -1,0 +1,227 @@
+﻿@import url("reset.css");
+
+/* ############ body & h1-5 ############ */
+
+body {
+    font-size: 10px;
+    font-family: verdana, helvetica, arial, sans-serif;
+    background: #e8eaed;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 575;
+    color: #242291;
+}
+
+h1 {
+    font-size: 3.2em;
+    
+}
+h2 {
+    font-size: 2em;
+    margin-bottom: 5px;
+    
+}
+h3 {
+    font-size: 1.4em;
+    margin-top: 3px;
+    
+}
+h3.contact {
+    margin-top: 15px;
+}
+h4 {
+    font-size: 1.2em;
+   
+    padding-left: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+h5 {
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+/* ############ Top of the page ############ */
+
+#topCont {
+    display: block;
+}
+
+.topHead {
+    background: url("../images/layout/header-sky.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 15px;
+}
+nav {
+    background-color: black;
+    margin: 0px;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a {
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    display: inline-block;   
+}
+a:hover{
+    background-color: #242291;
+}
+a.active{
+    background-color: midnightblue;
+}
+.rightAlign {
+    float: right
+}
+
+/* ############ Main page ############ */
+
+#mainCont {
+    display: inline-block;
+    float: none;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    width: 100%;
+}
+main, aside {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 2%;
+    border: 1px #999 solid;
+    box-shadow: 20px 20px 10px grey;
+}
+main {
+    width: 55%;
+    margin-left: 7%;
+    float: left;
+}
+main figure{
+    float: left;
+    margin: 5px;  
+}
+main figcaption {
+    vertical-align: top;
+    text-align: left;   
+}
+article section {
+    display: inline-block;
+    margin-top: 5px;
+}
+p {
+    line-height: 18px;
+    margin: 5px;
+}
+
+#gallery {
+    float: right;
+    width: 20%;
+    text-align: center;
+    max-width: 220px;
+    margin-right: 7%;  
+}
+#gallery img {
+    display: block;
+    padding-top: 5px;
+    margin: 0 auto;
+}
+#weather {
+    float: right;
+    width: 20%;
+    text-align: center;
+    margin-right: 7%;
+}
+#contact {
+    width: 90%;
+    margin: 0 auto;
+    float: none;
+}
+label.test {
+    color: aquamarine;
+    margin-bottom: 5px;
+}
+label {
+    color: black;
+    font-weight: bold;
+    font-size: 1.3em;
+    display: block;
+    width: 100px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+option {
+    color: blueviolet;
+    margin-bottom: 100px;
+}
+
+.radioGroupBelow label {
+    float: left;
+    width: auto;
+    margin: 0 0.2em;
+}
+.radioGroupBelow label input[type="radio"] {
+    margin: 0.8em auto;
+}
+
+table {
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+}
+thead td {
+    font-weight: bold;
+    background: #000;
+    color: white;
+    padding: 3px;
+}
+tr:nth-of-type(even) {
+    background: #ddd;
+}
+
+#train {
+    margin: 0;
+    width: 100%
+}
+
+@media only screen and (max-width: 650px) {
+    
+     main {
+        width: 90%;
+        margin: auto;
+        float:none;
+        margin-top: 20px;
+    }
+    #gallery {
+        width: 90%;
+        margin: auto;
+        float: none;
+        text-align: center;
+        max-width: none;
+    }
+    #gallery img {
+        display: inline-block;
+    }
+    #weather {
+        width: 70%;
+        margin: auto;
+        float: none;
+        text-align: center;
+    }
+   
+}
+
+/* ############ Bottom of the page ############ */
+
+#bottomCont {
+    display: block;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid gray;
+}

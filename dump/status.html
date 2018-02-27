@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="assets/styles/general.css" rel="stylesheet">
+<title>Nickstabadet</title>
+</head>
+    <body>
+        <div id="topCont">
+            <header class="topHead">
+                <h1>Nickstabadet</h1>
+                <h4>Ett soligt sommarbad</h4>
+            </header>
+               
+            <!-- NavigeringsFältet -->
+            <nav>
+                <ul>
+                    <li> <a href="index.html">Hem</a></li>
+                    <li> <a href="contact.html">Kontakt</a></li>
+                    <li> <a href="status.html" class="active">Väder</a></li>
+                    <li> <a href="index.html" class="rightAlign">Tillbaks</a></li> 
+                </ul>
+            </nav>
+        </div>
+<div id="mainCont">
+    <aside id="weather">
+        <header>
+            <h2>Vädret på Nicksta</h2>
+        </header>
+        <table id="weatherTable">
+            <thead>
+                <td>Klocka</td>
+                <td>Väder</td>
+                <td>Värme</td>
+                <td>Vind</td>
+            </thead>
+            <tr>
+                <td>07:00</td>
+                <td>Moln</td>
+                <td>16&#8451;</td>
+                <td>3m/s</td>
+            </tr>
+            <tr>
+                <td>10:00</td>
+                <td>moln</td>
+                <td>19&#8451;</td>
+                <td>4m/s</td>
+            </tr>
+            <tr>
+                <td>13:00</td>
+                <td>Moln</td>
+                <td>18&#8451;</td>
+                <td>4m/s</td>
+            </tr>
+            <tr>
+                <td>16:00</td>
+                <td>Sol</td>
+                <td>17&#8451;</td>
+                <td>2m/s</td>
+            </tr>
+        </table>
+    </aside>
+    <main>
+        <header>
+             <h2>Åker tågen?</h2>
+        </header>
+        <section>
+            <h4>Jag åker ifrån...</h4>
+            <input type="text" required>
+            <input type="submit" name="sök" value="Sök..">
+        </section>
+        <section>
+            <h4>Åker från:</h4>
+            <table id="train">
+                <thead>
+                    <td>Nr</td>
+                    <td>Avgår</td>
+                    <td>Ankommer</td>
+                </thead>
+                <tr>
+                    <td>42</td>
+                    <td>09:25</td>
+                    <td>10:45</td>
+                </tr>
+                <tr>
+                    <td>42</td>
+                    <td>10:25</td>
+                    <td>11:35</td>
+                </tr>
+                <tr>
+                    <td>42</td>
+                    <td>11:25</td>
+                    <td>12:55</td>
+                </tr>
+            </table>
+            <h3>Inga problem i trafiken</h3>
+        </section>
+    </main>
+</div>
+        <div id="bottomCont">
+            <footer>Vill du veta mer? Skicka e post till <a href="mailto:richardhags@gmail.com">richardhags@gmail.com</a></footer>
+        </div>
+    </body>
+</html>  

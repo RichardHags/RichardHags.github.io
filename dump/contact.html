@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="assets/styles/general.css" rel="stylesheet">
+<title>Nickstabadet</title>
+</head>
+    <body>
+        <div id="topCont">
+            <header class="topHead">
+                <h1>Nickstabadet</h1>
+                <h4>Ett soligt sommarbad</h4>
+            </header>
+               
+            <!-- NavigeringsFältet -->
+            <nav>
+                <ul>
+                    <li> <a href="index.html">Hem</a></li>
+                    <li> <a href="contact.html" class="active">Kontakt</a></li>
+                    <li> <a href="status.html">Väder</a></li>
+                    <li> <a href="index.html" class="rightAlign">Tillbaks</a></li> 
+                </ul>
+            </nav>
+        </div>
+<div id="mainCont">
+    <main id="contact">
+        <header>
+            <h2>Lämna dina synpunkter här!</h2>
+        </header>
+        <form>
+            <div>
+                <label for="Rubrik">Rubrik</label>
+                <input maxlength="45" type="text" id="Rubrik" placeholder="Rubrik">
+            </div>
+            <div>
+                <label for="beskrivning">Beskrivning</label>
+                <textarea name="Beskrivning" id="beskrivning" cols="20" rows="2" maxlength="100"></textarea>
+                <small>Max 100 tecken</small>
+            </div>
+            <div>
+                <label for="Ärende">Ärende</label>
+                <select name="Ärende" id="Ärende">
+                    <option selected>Välj alternativ här</option>
+                    <option value="Strand">Strand</option>
+                    <option value="Kamping">Kamping</option>
+                    <option value="Övrigt">Övrigt</option>
+                </select>
+            </div>
+            <div>
+                <h3 class="contact">Vill du få svar på din synpunkt?</h3>
+            <div class=radioGroupBelow>
+                
+                <label for="svar_ja">Ja
+                <input value="yes" name="svar" type="radio" id="svar_ja">
+                </label>
+                
+                <label for="svar_nej">Nej
+                <input value="no" name="svar" type="radio" id="svar_nej" checked>
+                </label>
+            </div>
+                
+                <div>
+                    <label for="email_field">Email</label>
+                    <input maxlength="50" id="email_field" type="text" placeholder="example@email.com">
+                </div>
+            </div>
+        
+            <div>
+                <button type="button">Skicka..</button>
+            </div>
+        </form>
+    </main>
+</div>
+        <div id="bottomCont">
+            <footer>Vill du veta mer? Skicka e post till <a href="mailto:richardhags@gmail.com">richardhags@gmail.com</a></footer>
+        </div>
+    </body>
+</html> 
