@@ -15,6 +15,7 @@
             <p>Ett soligt sommarbad</p>
         </div>
     </header>
+   
     <!-- NavigeringsFältet -->
 	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
 		<button class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#nicksta-navbar">
@@ -41,14 +42,14 @@
                     <div class="card-body">
                         <form>
                           <div class="form-group row">
-                            <label for="fran-dest">Jag åker ifrån..</label>
+                            <label for="from-dest">Jag åker ifrån..</label>
                             <div class="col-md-10">
-                              <input type="text" class="text-input" id="fran-dest" placeholder="ex: Stockholm / Södertälje">
+                              <input type="text" class="text-input" id="from-dest" placeholder="ex: Stockholm / Södertälje">
                             </div>
                           </div>
                           <div class="form-group row">
                             <div class="col-md-10">
-                              <button id="sok-knapp" type="submit" class="btn btn-primary">Sök..</button>
+                              <button id="search-button" type="submit" class="btn btn-primary">Sök..</button>
                             </div>
                           </div>
                         </form>
@@ -62,11 +63,11 @@
                                     <th scope="col">Ankommer</th>
                                 </tr>
                             </thead>
-                            <tbody id="tag-table">
+                            <tbody id="train-table">
                             </tbody>
                                    
                         </table>
-                        <small id="aker-fran" class="text-secondary">Åker från</small>
+                        <small id="go-from" class="text-secondary">Åker från</small>
                     </div>
                 </section>
             </div>
@@ -87,31 +88,8 @@
                                     <th>Vind</th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <tr>
-                                    <td>07:00</td>
-                                    <td>Moln</td>
-                                    <td>16&#8451;</td>
-                                    <td>3m/s</td>
-                                </tr>
-                                <tr>
-                                    <td>10:00</td>
-                                    <td>moln</td>
-                                    <td>19&#8451;</td>
-                                    <td>4m/s</td>
-                                </tr>
-                                <tr>
-                                    <td>13:00</td>
-                                    <td>Moln</td>
-                                    <td>18&#8451;</td>
-                                    <td>4m/s</td>
-                                </tr>
-                                <tr>
-                                    <td>16:00</td>
-                                    <td>Sol</td>
-                                    <td>17&#8451;</td>
-                                    <td>2m/s</td>
-                                </tr>
+                            <tbody id="weather-table">
+                                
                             </tbody>
                         </table>
                     </div>
